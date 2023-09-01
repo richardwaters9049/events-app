@@ -6,6 +6,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Otherside Tattoo') }}</title>
+    <link rel="icon" href="{{ asset('../public/favicon.ico') }}" type="image/x-icon">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
