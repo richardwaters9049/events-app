@@ -12,6 +12,8 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+
+
     <!-- Styles -->
     <style>
         /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */

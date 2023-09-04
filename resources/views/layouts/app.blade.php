@@ -8,6 +8,10 @@
     <title>{{ config('app.name', 'Otherside Tattoo') }}</title>
     <link rel="icon" href="{{ asset('../public/favicon.ico') }}" type="image/x-icon">
 
+    <!-- Swiper -->
+    {{-- <link rel="stylesheet" href="{{ asset('node_modules/swiper/swiper-bundle.min.css') }}">
+    <script src="{{ asset('node_modules/swiper/swiper-bundle.min.js') }}"></script> --}}
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,10 +19,12 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+
 </head>
 <body class="font-sans antialiased">
 
-    <div class="min-h-screen bg-black custom-cursor">
+    <div class="min-h-screen bg-black custom-cursor relative">
         @include('layouts.navigation')
 
         <!-- Page Heading -->
@@ -35,5 +41,6 @@
             {{ $slot }}
         </main>
     </div>
+
 </body>
 </html>
