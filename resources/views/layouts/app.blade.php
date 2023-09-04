@@ -4,14 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Otherside Tattoo') }}</title>
+    <title>@yield('title', 'Otherside Tattoo')</title>
     <link rel="icon" href="{{ asset('../public/favicon.ico') }}" type="image/x-icon">
-
-    <!-- Swiper -->
-    {{-- <link rel="stylesheet" href="{{ asset('node_modules/swiper/swiper-bundle.min.css') }}">
-    <script src="{{ asset('node_modules/swiper/swiper-bundle.min.js') }}"></script> --}}
-
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,7 +13,6 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
 
 </head>
 <body class="font-sans antialiased">
